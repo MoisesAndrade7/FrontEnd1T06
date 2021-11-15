@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Satisfy&display=swap');
+
+html *{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image:url('https://feomg.com.br/wp-content/uploads/2015/08/lagoa-santa-800x550.jpg');
+    background-repeat: no-repeat;
+    background-position: center, fixed;
+    background-size: cover;  
+}
+h1{
+    margin: 0px;
+    text-align: center;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 32px;
+    font-style: oblique;
+    font-weight: 200;
+    background-color: silver;
+    padding: 10px;
+  }
+  #resumo{
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-style: oblique;
+  }
+  #principal{
+      text-align: center;
+  }
+  .subtitulo{
+      color: white;
+      text-align: center;
+      font-family: 'Satisfy', cursive;
+      font-size: 32px;
+      font-style: oblique;
+      font-weight: 200;
+      padding: 10px;
+  }
+  ul{
+      background-color:slategray;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-style: oblique;
+      margin: 20px, 0px;
+  }
+  #rodape{
+      text-align: center;
+      padding: 20px;
+  }
+  .icones{
+      margin: 20px;
+      width: 70px;
+      height: 70px;
+  }
