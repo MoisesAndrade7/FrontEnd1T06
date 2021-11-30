@@ -4,7 +4,8 @@
 html *{
     color: white;
     margin: 0px;
-    padding: 0px;
+  
+    text-align: center;
 }
 body{
     background-image:url('https://feomg.com.br/wp-content/uploads/2015/08/lagoa-santa-800x550.jpg');
@@ -12,7 +13,7 @@ body{
     background-position: center, fixed;
     background-size: cover;  
 }
-h1{
+h1:hover{
     margin: 0px;
     text-align: center;
     color: white;
@@ -60,3 +61,11 @@ h1{
       width: 70px;
       height: 70px;
   }
+#resumo::first-letter{
+    color: green;
+    font-size: 32px;
+}
+
+
+
+  

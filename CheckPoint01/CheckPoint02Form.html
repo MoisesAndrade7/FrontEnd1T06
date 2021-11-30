@@ -1,0 +1,92 @@
+
+<!-- O formulário de cadastro deve ter no mínimo os inputs:
+Nome (com no máximo 100 caracteres)
+Email 
+Telefone (apenas números)
+Data de nascimento (data)
+Se é maior ou menor de idade (deve ter as duas opções, podendo marcar apenas uma delas).
+Um campo que permita que o usuário selecione um ponto de interesse na sua 
+cidade. (De uma lista de no mínimo 3).
+Um campo opcional onde o usuário poderá dizer quais seus interesses na cidade: 
+Turista, Residente e Estudante. Note que o usuário pode escolher nenhum ou mais que um.
+O formulário deve ter um botão para enviar e um botão para resetar os dados digitados. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="CheckPoint01\css\styleForm.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form action="/CheckPoint01/" name="formulario" method="post">
+        <fieldset form="formulario">
+            <legend>Formulário:</legend>
+                <div>
+                    <label for="nome">Nome:</label>  
+                    <input type="text" varchar(100) name="usuario" id="nome">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" name="telefone" id="telefone">
+                </div>
+                <div>
+                    <label for="dataDeNascimento">Date de Nascimento:</label>
+                    <input type="date" name="dataDeNascimento" id="dataDeNascimento">
+                </div> 
+        </form>
+        <form action="/CheckPoint01/" method="get">
+            <div>
+                <label >Maior de Idade:</label>
+                    <select name="maiorDeIdade">
+                        <option value="true">Sim</option>
+                        <option value="false">Não</option>
+                    </select>
+            </div>
+            </form>
+            <form action="/CheckPoint01/">
+                <div>
+                    <label>Selecione um ponto de interesse:</label>
+                        <select name="pontosDeInteresse">
+                            <option value="interesse1">Grutas</option>
+                            <option value="interesse2">Mirante</option>
+                            <option value="interesse3">Lagoa</option>
+                        </select>
+                </div>
+            </form>
+            <!-- Um campo opcional onde o usuário poderá dizer quais seus interesses na cidade: Turista,
+            Residente e Estudante. Note que o usuário pode escolher nenhum ou mais que um. -->
+            <form class="tipoInteresse" action="/CheckPoint01/" method="get">
+                <div>
+                    <label>Selecione seus interesses(opcional):</label>
+                </div>
+                <div>            
+                    <input type="checkbox" name="turista" value="turista">
+                    <label>Turista</label>
+                </div>
+                <div> 
+                    <input type="checkbox" name="residente" value="residente">
+                    <label>Residente</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="estudante" value="estudante">
+                    <label>Estudante</label>
+                </div>
+            </form>
+            <!-- O formulário deve ter um botão para enviar e um botão para resetar os dados digitados. -->
+            <form action="/CheckPoint01/" method="get"></form>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+         </fieldset>
+
+
+    
+</body>
+</html>

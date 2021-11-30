@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&display=swap');
+body{
+    background-image:url('https://feomg.com.br/wp-content/uploads/2015/08/lagoa-santa-800x550.jpg');
+    background-repeat: no-repeat;
+    background-position: center, fixed;
+    background-size: cover;
+    font-family:  'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 50px; 
+}
+fieldset{
+    background-color: rgb(68, 87, 96, 0.40);
+    color:white;
+    border: 0;
+}
+legend{
+    color: firebrick;
+}
+div{
+    height:30px;
+    padding: 5px;
+}
+select{
+    padding: 3px;
+    font-family: 'Kanit', sans-serif;
+    border: 0;
+
+}
+button{
+    padding: 10px;
+    margin: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+
+/* O formulário deve ter uma animação onde quando o usuário passa o cursor do mouse sobre o campo 
+e o campo aumenta de tamanho. */
+input:hover{
+    height: 20px;
+    border: 0;
+    padding: 10px;
+}
